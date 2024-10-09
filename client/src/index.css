@@ -1,0 +1,355 @@
+/*-------------To reset the defult-----------**/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --redColor: red;
+  --whiteColor: white;
+  --blackColor: black;
+  --blackColorWithOpacity: rgba(0, 0, 0, 0.64);
+  --aquaColor: aqua;
+  --azureColor: azure;
+  --brownColor: brown;
+}
+/*-------------Nav bar css-------------------**/
+
+nav {
+  width: 100%;
+  height: 50px;
+  color: var(--whiteColor);
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  /* padding: 2vh; */
+  display: inline;
+  /* overflow: hidden; */
+}
+nav li {
+  width: 10%;
+
+  display: inline-block;
+  padding: 10px;
+  /* border-radius: 15px; */
+  margin: 0;
+  margin-left: 1vh;
+  margin-right: 1vh;
+  text-shadow: -1px -1px 0 var(--blackColor), 1px -1px 0 var(--blackColor),
+    -1px 1px 0 var(--blackColor), 1px 1px 0 var(--blackColor);
+  /* background-color: var(--blackColor); */
+  /* background-color: rgb(0, 0, 0); */
+}
+
+nav li:hover {
+  border-bottom: 5px solid var(--brownColor);
+  text-shadow: none;
+}
+
+nav ul a li {
+  text-decoration: none;
+  /* color: azure; */
+  color: var(--azureColor);
+}
+body {
+  background-image: url("./Images/background-trees.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* color: white; */
+  color: var(--whiteColor);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* ----------------------Home css-------------------**/
+
+h1,
+h2 {
+  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+  /* font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; */
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
+  /* font-family: Georgia, "Times New Roman", Times, serif; */
+  /* font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif; */
+  /* font-family: fantasy; */
+}
+h1 {
+  /* color: white;  */
+  color: var(--whiteColor);
+  text-shadow: -1px -1px 0 var(--blackColor), 1px -1px 0 var(--blackColor),
+    -1px 1px 0 var(--blackColor), 1px 1px 0 var(--blackColor); /* יצירת גבול שחור סביב האותיות */
+}
+h2 {
+  color: white; /* צבע האותיות */
+  text-shadow: -1px -1px 0 var(--blackColor), 1px -1px 0 var(--blackColor),
+    -1px 1px 0 var(--blackColor), 1px 1px 0 var(--blackColor); /* יצירת גבול שחור סביב האותיות */
+}
+
+.home {
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 100px;
+}
+.home-text,
+.opening-text {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--blackColorWithOpacity);
+  width: 100%;
+  /* background-color: rgb(0, 0, 0); */
+  /* background-color: rgba(0, 0, 0, 0.64); */
+}
+
+.home .home-images img {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: var(--blackColorWithOpacity);
+  width: 40%;
+  height: 50vh;
+}
+.opening-text ul {
+  list-style: none;
+}
+
+/*----------------Footer css--------------**/
+.footer {
+  background-color: var(--blackColor);
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  /* color: var(--whiteColor); */
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 0;
+  font-style: italic;
+  z-index: 1000;
+  padding: auto;
+}
+
+.footer-left {
+  float: left;
+  margin: 10px;
+}
+.footer-right {
+  float: right;
+  margin: 10px;
+  text-decoration: none;
+}
+.footer-right ul,
+.footer-center ul,
+.footer-left ul {
+  list-style: none;
+}
+.footer-right li a,
+.footer-center li a,
+.footer-left li a {
+  text-decoration: none;
+  color: var(--azureColor);
+}
+.footer-right li a:hover,
+.footer-center li a:hover,
+.footer-left li a:hover {
+  text-decoration: underline;
+}
+.footer-right li a img,
+.footer-center li a img,
+.footer-left li a img {
+  width: 30px;
+  height: 30px;
+}
+.footer-center {
+  float: center;
+  margin: 10px;
+}
+.footer .footer-icons ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.footer .footer-icons ul li {
+}
+.footer .footer-icons ul li a img {
+  width: 50px;
+  height: auto;
+  margin: auto;
+  padding: auto;
+}
+/* ----------------------Info css-------------------**/
+
+.info-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--blackColorWithOpacity);
+  z-index: 1;
+}
+
+.info {
+  position: relative;
+  z-index: 2;
+  color: var(--whiteColor);
+  text-align: center;
+  padding-top: 10px;
+
+  padding: 20px;
+}
+.info h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.info p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.contact-info ul {
+  list-style: none;
+  margin: 20px;
+}
+.contact-info ul li a {
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+.contact-info ul li a:hover {
+  text-decoration: underline;
+}
+.info .embded-vidoes {
+  width: 100%;
+  margin: auto;
+}
+.info .embded-vidoes ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+.info .embded-vidoes ul li iframe {
+  width: 200px;
+  height: auto;
+  /* transition: width 2s; */
+  transition: width 2s, height 4s;
+  transform: ease-in-out;
+}
+
+.info .embded-vidoes ul li img {
+  margin: auto;
+  margin-top: 20%;
+  cursor: pointer;
+}
+
+/* ----------------------Galery css-------------------**/
+.galery {
+  margin: auto;
+  margin-bottom: 100px;
+  margin-top: 5vh;
+}
+
+.galery img {
+  width: 30vh;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.galery .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--blackColorWithOpacity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.galery .overlay img {
+  width: 90vh;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+  z-index: 1001;
+}
+/*-----------------------Posts css----------------**/
+.posts {
+  margin: 20px;
+  margin-bottom: 100px;
+  margin-top: 5vh;
+}
+
+.post {
+  width: 50%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: var(--blackColor);
+  opacity: 0.7; /* שקיפות בסיסית */
+  transition: opacity 0.3s ease; /* מעבר עדין */
+}
+
+.post:hover {
+  opacity: 0.9; /* ברגע שמעבירים את העכבר על הפוסט */
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.circle-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.author-details {
+  font-size: 14px;
+}
+/* .post-content p {
+  text-align: right;
+  color: blue;
+} */
+/* ----------------------Media Query css-------------------**/
+
+@media only screen and (max-width: 600px) {
+}

@@ -1,5 +1,6 @@
 import React from "react";
-
+import Comments from "./Comments";
+import Post from "./Post";
 // מערך הפוסטים עם תוכן של 500+ מילים
 const postsData = [
   {
@@ -15,6 +16,7 @@ const postsData = [
     date: "1 באוקטובר 2024",
     authorImage:
       "https://www.fullbuckethealth.com/cdn/shop/articles/FullBucket_Horse_Age_Chart_800x.jpg?v=1597367323",
+    id: 1,
   },
   {
     title: "כיצד הרכיבה הטיפולית תורמת לשיפור בקשב וריכוז?",
@@ -29,6 +31,7 @@ const postsData = [
     date: "15 בספטמבר 2024",
     authorImage:
       "https://www.fullbuckethealth.com/cdn/shop/articles/FullBucket_Horse_Age_Chart_800x.jpg?v=1597367323g",
+    id: 2,
   },
   {
     title: "רכיבה טיפולית לאנשים עם מוגבלויות פיזיות",
@@ -43,6 +46,7 @@ const postsData = [
     date: "10 באוגוסט 2024",
     authorImage:
       "https://www.fullbuckethealth.com/cdn/shop/articles/FullBucket_Horse_Age_Chart_800x.jpg?v=1597367323g",
+    id: 3,
   },
 ];
 
@@ -50,35 +54,40 @@ const Posts = () => {
   return (
     <div className="posts">
       {postsData.map((post, index) => (
-        <div key={index} className="post">
-          <h3>{post.title}</h3>
-          <div className="post-author">
-            <img
-              src={post.authorImage}
-              alt={post.authorName}
-              className="circle-image"
-            />
-            <div className="author-details">
-              <p>מאת: {post.authorName}</p>
-              <p>תאריך: {post.date}</p>
-            </div>
-          </div>
-          <div className="post-content"></div>
-          {sliceStringToArr(post.content).map((item, index) => (
-            <p key={index}>{item}</p>
-          ))}
-          {/* <p>{post.content}</p> */}
-        </div>
+        <Post index={index} post={post} />
       ))}
     </div>
   );
 };
 
 export default Posts;
-function sliceStringToArr(string) {
-  const arr = string.split(/[.,]/);
-  // const arr = string.split(/(?<=[.,])/);
-  console.log(arr);
+// function sliceStringToArr(string) {
+//   const arr = string.split(/[.,]/);
+//   // const arr = string.split(/(?<=[.,])/);
+//   console.log(arr);
 
-  return arr;
-}
+//   return arr;
+// }
+
+// {/* <div key={index} className="post">
+//           <h3>{post.title}</h3>
+//           <div className="post-author">
+//             <img
+//               src={post.authorImage}
+//               alt={post.authorName}
+//               className="circle-image"
+//             />
+//             <div className="author-details">
+//               <p>מאת: {post.authorName}</p>
+//               <p>תאריך: {post.date}</p>
+//             </div>
+//           </div>
+//           <div className="post-content"></div>
+//           {sliceStringToArr(post.content).map((item, index) => (
+//             <p key={index}>{item}</p>
+//           ))}
+//           {/* <p>{post.content}</p> */}
+//           <div className="comments">
+//             {/* <Comments /> */}
+//           </div>
+//         </div> */}

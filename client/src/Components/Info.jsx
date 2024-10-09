@@ -11,6 +11,7 @@ const Info = () => {
     "https://www.youtube.com/embed/FvCuon94haA",
     "https://www.youtube.com/embed/FvCuon94haA",
   ]);
+
   return (
     <div className="info-container">
       <div className="overlay"></div>
@@ -51,13 +52,14 @@ const Info = () => {
             </li>
           </ul>
         </div>
+
         <div className="embded-vidoes">
           <ul>
             <li
               onClick={() => {
                 handlePrev(setIndexEmbded);
               }}>
-              <img src={leftArrow} alt="" />
+              <img className="arrow-img" src={leftArrow} alt="left arrow" />
             </li>
 
             {getCurrentVideos(embdedVideos, indexEmbded).map((video, index) => (
@@ -78,7 +80,7 @@ const Info = () => {
               onClick={() => {
                 handleNext(setIndexEmbded);
               }}>
-              <img src={rightArrow} alt="" />
+              <img className="arrow-img" src={rightArrow} alt="right arrow" />
             </li>
           </ul>
         </div>
@@ -89,17 +91,17 @@ const Info = () => {
 
 export default Info;
 
-const getCurrentVideos = (embdedVideos, indexEmbded) => {
+const getCurrentVideos = (arr, index) => {
   const result = [];
   for (let i = 0; i < 3; i++) {
-    const currentIndex = (Math.abs(indexEmbded) + i) % embdedVideos.length;
-    result.push(embdedVideos[currentIndex]);
+    const currentIndex = (Math.abs(index) + i) % arr.length;
+    result.push(arr[currentIndex]);
   }
   return result;
 };
-const handleNext = (setIndexEmbded) => {
-  setIndexEmbded((prev) => prev + 1);
+const handleNext = (setIndex) => {
+  setIndex((prev) => prev + 1);
 };
-const handlePrev = (setIndexEmbded) => {
-  setIndexEmbded((prev) => prev - 1);
+const handlePrev = (setIndex) => {
+  setIndex((prev) => prev - 1);
 };

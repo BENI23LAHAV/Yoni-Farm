@@ -11,7 +11,11 @@ const Info = () => {
     "https://www.youtube.com/embed/FvCuon94haA",
     "https://www.youtube.com/embed/FvCuon94haA",
   ]);
-
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  function handleResize() {
+    setScreenWidth(window.innerWidth);
+  }
+  window.addEventListener("resize", handleResize);
   return (
     <div className="info-container">
       <div className="overlay"></div>
@@ -62,7 +66,11 @@ const Info = () => {
               <img className="arrow-img" src={leftArrow} alt="left arrow" />
             </li>
 
-            {getCurrentVideos(embdedVideos, indexEmbded).map((video, index) => (
+            {getCurrentVideos(
+              embdedVideos,
+              indexEmbded,
+              screenWidth > 600 ? 3 : 1
+            ).map((video, index) => (
               <li>
                 <iframe
                   key={index}
@@ -91,9 +99,9 @@ const Info = () => {
 
 export default Info;
 
-const getCurrentVideos = (arr, index) => {
+const getCurrentVideos = (arr, index, ecceptedLength) => {
   const result = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < ecceptedLength; i++) {
     const currentIndex = (Math.abs(index) + i) % arr.length;
     result.push(arr[currentIndex]);
   }

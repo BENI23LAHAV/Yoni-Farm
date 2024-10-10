@@ -380,7 +380,7 @@ h2 {
 }
 /*-----------------------Posts css----------------**/
 .posts {
-  margin: 20px;
+  margin: auto;
   margin-bottom: 100px;
   margin-top: 5vh;
 }
@@ -437,6 +437,7 @@ h2 {
     width: 90%;
     display: flex;
     flex-direction: column;
+    /* margin-bottom: 40vh; */
   }
   .home-images {
     width: 100%;
@@ -449,8 +450,18 @@ h2 {
     width: 90%;
     height: auto;
   }
-
+  /*-------------------------Farm Team css-------------------**/
+  .farm-team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   /* ----------------------Footer css---------------**/
+  .footer {
+    width: 100%;
+  }
   .footer .footer-text {
     width: 100%;
     display: flex;
@@ -467,19 +478,24 @@ h2 {
     margin-top: 3vh;
   }
   .posts {
-    width: 90%;
-    margin: auto;
+    margin: 0;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    /* margin-left: 1%; */
-    margin-right: 30%;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    width: 100%;
   }
   .post {
-    width: 100%;
+    max-width: 100%;
+    width: 80%;
     margin: auto;
+    margin-top: 2vh;
+    padding: auto;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }

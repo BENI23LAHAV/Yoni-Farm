@@ -1,9 +1,18 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const rightArrow = require("../Images/right-arrow.png");
 const leftArrow = require("../Images/left-arrow.png");
 
 const TeamFarm = () => {
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    // console.log(screenWidth);
+  }, [screenWidth]);
+  function handleResize() {
+    setScreenWidth(window.innerWidth);
+  }
+  window.addEventListener("resize", handleResize);
+
   const [farmTeams, setFarmTeams] = useState([
     {
       name: "יוני להב",
@@ -39,15 +48,17 @@ const TeamFarm = () => {
             onClick={() => handleNext(setIndexTeam)}
           />
         </li>
-        {getCurrentImage(farmTeams, indexTeam).map((team, index) => (
-          <li>
-            <div className="team-images">
-              <img src={team.image} alt={`${team.name}image`} />
-              <h4>{team.name}</h4>
-              <p>{team.title}</p>
-            </div>
-          </li>
-        ))}
+        {getCurrentImage(farmTeams, indexTeam, screenWidth > 600 ? 3 : 1).map(
+          (team, index) => (
+            <li>
+              <div className="team-images">
+                <img src={team.image} alt={`${team.name}image`} />
+                <h4>{team.name}</h4>
+                <p>{team.title}</p>
+              </div>
+            </li>
+          )
+        )}
         <li>
           <img
             className="arrow-img"
@@ -64,9 +75,9 @@ const TeamFarm = () => {
 
 export default TeamFarm;
 
-const getCurrentImage = (arr, index) => {
+const getCurrentImage = (arr, index, ecceptedLength) => {
   const result = [];
-  for (let i = 0; i < 3; i++) {
+  for (let i = 0; i < ecceptedLength; i++) {
     const currentIndex = (Math.abs(index) + i) % arr.length;
     result.push(arr[currentIndex]);
   }

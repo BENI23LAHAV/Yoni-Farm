@@ -60,8 +60,8 @@ const Home = () => {
 export default Home;
 
 function sliceStringToArr(string) {
-  const arr = string.split(/[.,]/);
-  // const arr = string.split(/(?<=[.,])/);
+  // const arr = string.split(/[.,]/);
+  const arr = string.split(/(?<=[.,])/);
   console.log(arr);
 
   return arr;

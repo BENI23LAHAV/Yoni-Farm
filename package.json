@@ -848,9 +848,18 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "browserslist": [
+    "> 0.2%",
+    "not dead",
+    "Chrome >= 58",
+    "Firefox >= 50",
+    "Safari >= 10",
+    "Edge >= 16"
+  ],
   "author": "",
   "license": "ISC"
 }

@@ -62,8 +62,8 @@ const TeamFarm = () => {
         <li>
           <img
             className="arrow-img"
-            src={leftArrow}
-            alt="left arrow"
+            src={rightArrow}
+            alt="right arrow"
             style={{ cursor: "pointer" }}
             onClick={() => handleNext(setIndexTeam)}
           />
@@ -82,8 +82,8 @@ const TeamFarm = () => {
         <li>
           <img
             className="arrow-img"
-            src={rightArrow}
-            alt="right arrow"
+            src={leftArrow}
+            alt="left arrow"
             style={{ cursor: "pointer" }}
             onClick={() => handlePrev(setIndexTeam)}
           />

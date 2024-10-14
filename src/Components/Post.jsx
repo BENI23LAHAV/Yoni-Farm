@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Comments from "./Comments";
 const Post = (props) => {
   const { post, index } = props;
   const [showComments, setShowComments] = useState(false);
@@ -22,14 +21,7 @@ const Post = (props) => {
         <p key={index}>{item}</p>
       ))}
       {/* <p>{post.content}</p> */}
-      <div className="comments">
-        {false && (
-          <Comments
-            setShowComments={setShowComments}
-            showComments={showComments}
-          />
-        )}
-      </div>
+      */}
     </div>
   );
 };

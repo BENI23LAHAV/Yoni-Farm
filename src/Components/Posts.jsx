@@ -1,5 +1,4 @@
 import React from "react";
-// import Comments from "./Comments";
 import Post from "./Post";
 // מערך הפוסטים עם תוכן של 500+ מילים
 const postsData = [

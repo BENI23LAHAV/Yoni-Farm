@@ -19,6 +19,10 @@ const Home = () => {
     { day: "ו", isOpen: true, from: "10:00", to: "14:00" },
     { day: "שבת", isOpen: false, from: "00:00", to: "00:00" },
   ]);
+  if (false) {
+    setOpening([]);
+    setImages("");
+  }
   return (
     <div className="home">
       <div className="home-text">

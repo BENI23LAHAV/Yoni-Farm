@@ -46,7 +46,9 @@ const Info = () => {
             <li>
               <a
                 href="https://maps.app.goo.gl/p241Kg24APhSn2978"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer"
+              >
                 כתובת: סמוך ליילו, כביש 411, מזכרת בתיה
               </a>
             </li>
@@ -62,7 +64,8 @@ const Info = () => {
             <li
               onClick={() => {
                 handlePrev(setIndexEmbded);
-              }}>
+              }}
+            >
               <img className="arrow-img" src={leftArrow} alt="left arrow" />
             </li>
 
@@ -81,13 +84,15 @@ const Info = () => {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share fullscreen"
                   referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen></iframe>
+                  allowfullscreen
+                ></iframe>
               </li>
             ))}
             <li
               onClick={() => {
                 handleNext(setIndexEmbded);
-              }}>
+              }}
+            >
               <img className="arrow-img" src={rightArrow} alt="right arrow" />
             </li>
           </ul>

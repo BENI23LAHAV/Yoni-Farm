@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import { farmTeams } from "../Components/Sourses";
 const rightArrow = require("../Images/right-arrow.png");
 const leftArrow = require("../Images/left-arrow.png");
 
@@ -13,46 +13,6 @@ const TeamFarm = () => {
   }
   window.addEventListener("resize", handleResize);
 
-  // const [farmTeams, setFarmTeams] = useState([
-  //   {
-  //     name: "יוני להב",
-  //     title: "מנהל ראשי ומדריך",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV7bjGEmOGta3bXydiPduJUWNE9LKa2vVzQ&s",
-  //   },
-  //   {
-  //     name: "דוד להב",
-  //     title: "  אחראי תחזוקה וסייס",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV7bjGEmOGta3bXydiPduJUWNE9LKa2vVzQ&s",
-  //   },
-  //   {
-  //     name: "יהודה להב",
-  //     title: "  סייס",
-  //     image:
-  //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV7bjGEmOGta3bXydiPduJUWNE9LKa2vVzQ&s",
-  //   }
-  // ]);
-  const farmTeams = [
-    {
-      name: "יוני להב",
-      title: "מנהל ראשי ומדריך",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV7bjGEmOGta3bXydiPduJUWNE9LKa2vVzQ&s",
-    },
-    {
-      name: "דוד להב",
-      title: "  אחראי תחזוקה וסייס",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV7bjGEmOGta3bXydiPduJUWNE9LKa2vVzQ&s",
-    },
-    {
-      name: "יהודה להב",
-      title: "  סייס",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmV7bjGEmOGta3bXydiPduJUWNE9LKa2vVzQ&s",
-    },
-  ];
   const [indexTeam, setIndexTeam] = useState(0);
 
   return (

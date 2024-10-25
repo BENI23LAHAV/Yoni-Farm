@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import TeamFarm from "./TeamFarm";
-
+import { home_images as images } from "../Components/Sourses";
 const Home = () => {
   const [information, setInformation] = useState(
-    "החווה של חן ממוקמת ביישוב מזכרת בתיה באיזור השפלה.בחווה תוכלו למצוא את מיטב המדריכים המנוסים שלנו. עשרות ילדים אשר חווים את הרכיה באופן חווייתי מידי שבוע תוכלו גם למצוא פינת חיי יפייפיה, מאהל בדואי אותנטי, ומרחבים מרחיבי דעת."
+    "החווה של חן ממוקמת ביישוב מזכרת בתיה באיזור השפלה.בחווה תוכלו למצוא את מיטב המדריכים המנוסים שלנו. עשרות ילדים אשר חווים את הרכיבה באופן חווייתי מידי שבוע. תוכלו גם למצוא פינת חיי יפייפיה, מאהל בדואי אותנטי, ומרחבים מרחיבי דעת."
   );
-  const [images, setImages] = useState([
-    "https://www.horizonstructures.com/wp-content/uploads/2022/06/Horse-Barns-1024x575.jpg",
-    "https://wineandcountrylife.com/wp-content/uploads/2021/11/BD-Builders_Custom-Barn_BD_Dryden_143.jpg",
-  ]);
 
   const [opening, setOpening] = useState([
     { day: "א", isOpen: true, from: "10:00", to: "22:00" },
@@ -21,7 +17,6 @@ const Home = () => {
   ]);
   if (false) {
     setOpening([]);
-    setImages("");
   }
   return (
     <div className="home">

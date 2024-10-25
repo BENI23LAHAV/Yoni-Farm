@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { embdedVideos } from "../Components/Sourses";
 const rightArrow = require("../Images/right-arrow.png");
 const leftArrow = require("../Images/left-arrow.png");
 // import { type } from "language-tags";
@@ -37,14 +38,7 @@ const Info = () => {
   // ];
 
   const [indexEmbded, setIndexEmbded] = useState(0);
-  const [embdedVideos, setEmbdedVideos] = useState([
-    "https://www.youtube.com/embed/y893yE4TudA",
-    "https://www.youtube.com/embed/y893yE4TudA",
-    "https://www.youtube.com/embed/y893yE4TudA",
-    "https://www.youtube.com/embed/FvCuon94haA",
-    "https://www.youtube.com/embed/FvCuon94haA",
-    "https://www.youtube.com/embed/FvCuon94haA",
-  ]);
+
   const [onOffArrow, setOnOffArrow] = useState(true);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   function handleResize() {
@@ -82,8 +76,7 @@ const Info = () => {
               <a
                 href="https://maps.app.goo.gl/p241Kg24APhSn2978"
                 target="_blank"
-                rel="noreferrer"
-              >
+                rel="noreferrer">
                 כתובת: סמוך ליילו, כביש 411, מזכרת בתיה
               </a>
             </li>
@@ -99,8 +92,7 @@ const Info = () => {
             <li
               onClick={() => {
                 handlePrev(setIndexEmbded);
-              }}
-            >
+              }}>
               {onOffArrow && (
                 <img
                   className="arrow-img-right"
@@ -119,8 +111,7 @@ const Info = () => {
                 onClick={() => {
                   // setOnOffArrow((prev) => !prev);
                   console.log("click");
-                }}
-              >
+                }}>
                 <iframe
                   key={index}
                   width="853"
@@ -130,15 +121,13 @@ const Info = () => {
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share fullscreen"
                   referrerpolicy="strict-origin-when-cross-origin"
-                  allowfullscreen
-                ></iframe>
+                  allowfullscreen></iframe>
                 {screenWidth < 600 && (
                   <h6
                     onClick={() => {
                       setOnOffArrow((prev) => !prev);
                     }}
-                    style={{ cursor: "pointer" }}
-                  >
+                    style={{ cursor: "pointer" }}>
                     הסתר/החזר חיצים
                   </h6>
                 )}

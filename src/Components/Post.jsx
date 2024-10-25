@@ -12,7 +12,8 @@ const Post = (props) => {
           className="circle-image"
         />
         <div className="author-details">
-          <p>מאת: {post.authorName}</p>
+          <p>מאת: {post.authorName || "אורח"}</p>
+          <p>{post.farmTitle || ""}</p>
           <p>תאריך: {post.date}</p>
         </div>
       </div>
@@ -21,7 +22,6 @@ const Post = (props) => {
         <p key={index}>{item}</p>
       ))}
       {/* <p>{post.content}</p> */}
-      */}
     </div>
   );
 };

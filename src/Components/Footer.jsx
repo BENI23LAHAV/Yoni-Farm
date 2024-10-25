@@ -14,8 +14,7 @@ const Footer = () => {
             <a
               href="https://waze.com/ul/hsv8v15b17"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <img src={wazeImage} alt="waze Image" />
             </a>
           </li>
@@ -23,8 +22,7 @@ const Footer = () => {
             <a
               href="https://maps.app.goo.gl/p241Kg24APhSn2978"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <img src={mapsImage} alt="maps Image" />
             </a>
           </li>
@@ -37,8 +35,7 @@ const Footer = () => {
             <a
               href="https://wa.me/+97254123456"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <img src={whatsappImage} alt="whatsapp Image" />
             </a>
           </li>
@@ -51,8 +48,7 @@ const Footer = () => {
             <a
               href="mailto:hachva@example.com"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <img src={gmailImage} alt="gmail Image" />
             </a>
           </li>
@@ -60,23 +56,22 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-text">
-        <div className="footer-copyright-right">
-          <p>© 2024. כל הזכויות שמורות.</p>
-          <p>נוצר ע"י בני להב</p>
-          <a
-            href="mailto:beni0548472300@gmail.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            beni0548472300@gmail.com
-          </a>
-        </div>
         <div className="footer-details-left">
           <ul>
             <li>כתובתינו: כביש 411 סמוך ליילו מזכרת בתיה,ישראל </li>
             <li>פלאפון: 0527639398</li>
             <li>נשמח לראותכם בשעות הפעילות</li>
           </ul>
+        </div>
+        <div className="footer-copyright-right">
+          <p>© 2024. כל הזכויות שמורות.</p>
+          <p>Created & Desigend by: Beni Lahav</p>
+          <a
+            href="mailto:beni0548472300@gmail.com"
+            target="_blank"
+            rel="noreferrer">
+            beni0548472300@gmail.com
+          </a>
         </div>
       </div>
     </div>

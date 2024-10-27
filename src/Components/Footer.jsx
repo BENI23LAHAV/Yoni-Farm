@@ -64,7 +64,7 @@ const Footer = () => {
           </ul>
         </div>
         <div className="footer-copyright-right">
-          <p>© 2024. כל הזכויות שמורות.</p>
+          <p>© 2024.  כל הזכויות שמורות.</p>
           <p>Created & Desigend by: Beni Lahav</p>
           <a
             href="mailto:beni0548472300@gmail.com"

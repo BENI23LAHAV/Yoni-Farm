@@ -11,46 +11,43 @@ export const images = [
   "https://i.ibb.co/fCCYCZB/IMG-3030.jpg",
 ];
 export const farmImages = [
-  "https://i.ibb.co/D77D7ms/IMG-3030.jpg",
-
-  "https://i.ibb.co/dbJg1ZL/IMG-2964.jpg",
-
-  "https://i.ibb.co/Nx58WrL/IMG-2973.jpg",
-
-  "https://i.ibb.co/xGtmtzL/IMG-2976.jpg",
-
-  "https://i.ibb.co/yFbHN22/IMG-2993.jpg",
-
-  "https://i.ibb.co/rw0HSZ3/IMG-3010.jpg",
-
-  "https://i.ibb.co/rf39Y9C/IMG-3019.jpg",
-
-  "https://i.ibb.co/ngZy8rH/IMG-3029.jpg",
-
-  "https://i.ibb.co/wphKWZz/IMG-3033.jpg",
-
-  "https://i.ibb.co/dWSZTy4/IMG-3035.jpg",
-
-  "https://i.ibb.co/Js7PC5G/IMG-3039.jpg",
-
-  "https://i.ibb.co/VpbfQTS/IMG-3037.jpg",
-
-  "https://i.ibb.co/pzYTWyM/IMG-3047.jpg",
-
-  "https://i.ibb.co/4VmnfM2/IMG-3046.jpg",
-
-  "https://i.ibb.co/4FrKxjR/IMG-3064.jpg",
-
-  "https://i.ibb.co/6NYrChW/IMG-3068.jpg",
-
-  "https://i.ibb.co/txKLBrN/IMG-3080.jpg",
-
-  "https://i.ibb.co/B384LKD/IMG-3083.jpg",
-
-  "https://i.ibb.co/VHQFsf5/IMG-3085.jpg",
-
-  "https://i.ibb.co/tMLHs8n/IMG-3091.jpg",
+  "https://i.ibb.co/CQtWYgt/20241021121534-IMG-2969.jpg",
+  "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
+  "https://i.ibb.co/FDbFsFP/20241021121611-IMG-2976.jpg",
+  "https://i.ibb.co/QfqjjV2/20241021121948-IMG-2993.jpg",
+  "https://i.ibb.co/GH8gkYB/20241021121949-IMG-2994.jpg",
+  "https://i.ibb.co/Gnm1Pct/20241021122106-IMG-2998.jpg",
+  "https://i.ibb.co/JrmFpXJ/20241021122110-IMG-2999.jpg",
+  "https://i.ibb.co/7SmD5Fn/20241021122154-IMG-3006.jpg",
+  "https://i.ibb.co/85FGFz3/20241021122157-IMG-3008.jpg",
+  "https://i.ibb.co/47ckYkV/20241021122159-IMG-3009.jpg",
+  "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
+  "https://i.ibb.co/L6ChCp4/20241021122213-IMG-3011.jpg",
+  "https://i.ibb.co/7NL7J5X/20241021122218-IMG-3012.jpg",
+  "https://i.ibb.co/rGhf8Y5/20241021122224-IMG-3013.jpg",
+  "https://i.ibb.co/Mn2FzVG/20241021122340-IMG-3019.jpg",
+  "https://i.ibb.co/Q848TZ7/20241021122359-IMG-3022.jpg",
+  "https://i.ibb.co/wL4tzCW/20241021122715-IMG-3029.jpg",
+  "https://i.ibb.co/C9DP2fT/20241021122736-IMG-3030.jpg",
+  "https://i.ibb.co/v49NqDV/20241021122810-IMG-3033.jpg",
+  "https://i.ibb.co/QjtBqMM/20241021122839-IMG-3035.jpg",
+  "https://i.ibb.co/fr7VKPr/20241021122908-IMG-3037.jpg",
+  "https://i.ibb.co/FwgLmxT/20241021122956-IMG-3039.jpg",
+  "https://i.ibb.co/vJ9ZXd0/20241021123128-IMG-3046.jpg",
+  "https://i.ibb.co/mSVSVrg/20241021123142-IMG-3047.jpg",
+  "https://i.ibb.co/dPWP89Q/20241021123238-IMG-3050.jpg",
+  "https://i.ibb.co/zZ4tK1W/20241021123428-IMG-3061.jpg",
+  "https://i.ibb.co/Ny4dqkt/20241021123504-IMG-3064.jpg",
+  "https://i.ibb.co/F7XF2FG/20241021123533-IMG-3066.jpg",
+  "https://i.ibb.co/gw6XQ5S/20241021123548-IMG-3068.jpg",
+  "https://i.ibb.co/yyz5MM3/20241021123610-IMG-3071.jpg",
+  "https://i.ibb.co/V9g5ftq/20241021123823-IMG-3080.jpg",
+  "https://i.ibb.co/sVPNkTk/20241021123837-IMG-3083.jpg",
+  "https://i.ibb.co/L06qWDH/20241021123900-IMG-3085.jpg",
+  "https://i.ibb.co/0YvGP6g/20241021123929-IMG-3091.jpg",
+  "https://i.ibb.co/SvfFkrT/20241021123943-IMG-3093.jpg",
 ];
+
 //Info
 export const embdedVideos = [
   "https://www.youtube.com/embed/y893yE4TudA",

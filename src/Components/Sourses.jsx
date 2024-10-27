@@ -62,6 +62,12 @@ export const home_images = [
   "https://www.horizonstructures.com/wp-content/uploads/2022/06/Horse-Barns-1024x575.jpg",
   "https://wineandcountrylife.com/wp-content/uploads/2021/11/BD-Builders_Custom-Barn_BD_Dryden_143.jpg",
 ];
+export const home_images2 = [
+  "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
+  "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
+  "https://i.ibb.co/vJ9ZXd0/20241021123128-IMG-3046.jpg",
+  "https://i.ibb.co/F7XF2FG/20241021123533-IMG-3066.jpg",
+];
 //Team farm
 export const farmTeams = [
   {
@@ -133,3 +139,21 @@ export const postsData = [
     id: 3,
   },
 ];
+
+//functions
+//functions that received an array, index and ecceptedLength and returns a new array
+export const getCurrentElements = (arr, index, ecceptedLength) => {
+  const result = [];
+  for (let i = 0; i < ecceptedLength; i++) {
+    const currentIndex = (Math.abs(index) + i) % arr.length;
+    result.push(arr[currentIndex]);
+  }
+  return result;
+};
+
+export const handleNext = (setIndex) => {
+  setIndex((prev) => prev + 1);
+};
+export const handlePrev = (setIndex) => {
+  setIndex((prev) => prev - 1);
+};

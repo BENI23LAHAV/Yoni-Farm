@@ -1,11 +1,21 @@
 import React, { useState } from "react";
 import TeamFarm from "./TeamFarm";
-import { home_images as images } from "../Components/Sourses";
+import {
+  home_images,
+  home_images2 as images,
+  getCurrentElements,
+  handleNext,
+  handlePrev,
+} from "../Components/Sourses";
+
 const Home = () => {
   const [information, setInformation] = useState(
     "החווה של חן ממוקמת ביישוב מזכרת בתיה באיזור השפלה.בחווה תוכלו למצוא את מיטב המדריכים המנוסים שלנו. עשרות ילדים אשר חווים את הרכיבה באופן חווייתי מידי שבוע. תוכלו גם למצוא פינת חיי יפייפיה, מאהל בדואי אותנטי, ומרחבים מרחיבי דעת."
   );
-
+  const [imagesIndex, setImagesIndex] = useState(0);
+  // setInterval(() => {
+  //   handleNext(setImagesIndex);
+  // }, 2000);
   const [opening, setOpening] = useState([
     { day: "א", isOpen: true, from: "10:00", to: "22:00" },
     { day: "ב", isOpen: true, from: "10:00", to: "22:00" },
@@ -20,13 +30,21 @@ const Home = () => {
   }
   return (
     <div className="home">
-      <div className="home-text">
+      <div className="home-text ">
         {sliceStringToArr(information).map((item, index) => (
           <p key={index}>{item}</p>
         ))}
       </div>
       <div className="home-images">
-        {images.map((item, index) => (
+        {/* {images.map((item, index) => (
+          <img
+            alt={`image ${index}`}
+            src={item}
+            key={index}
+            className="home-image"
+          />
+        ))} */}
+        {getCurrentElements(images, imagesIndex, 2).map((item, index) => (
           <img
             alt={`image ${index}`}
             src={item}

@@ -17,6 +17,13 @@
     rgba(50, 50, 50, 0.5)
   );
 }
+/**------------Google fonts----------------**/
+.rubik-dirt-regular {
+  font-family: "Rubik Dirt", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /*-------------Nav bar css-------------------**/
 
 nav {
@@ -126,8 +133,8 @@ h2 {
 }
 .home-text,
 .opening-text {
-  padding: auto;
-  margin: auto;
+  /* padding: auto;
+  margin: auto; */
   margin-top: 5vh;
   margin-bottom: 5vh;
   border-radius: 15px;
@@ -146,8 +153,8 @@ h2 {
   background-color: var(--blackColorWithLitlleOpacity);
 }
 .home-images {
-  margin: auto;
-  padding: auto;
+  /* margin: auto;
+  padding: auto; */
   margin-top: 5vh;
   margin-bottom: 5vh;
   display: flex;
@@ -178,7 +185,7 @@ h2 {
   font-style: italic;
   font-size: 14px;
   z-index: 1000;
-  padding: auto;
+  /* padding: auto; */
   padding-top: 3vh;
   padding-bottom: 3vh;
 }
@@ -191,14 +198,14 @@ h2 {
   margin: auto;
   margin-top: 1vh;
   margin-bottom: 1vh;
-  padding: auto;
+  /* padding: auto; */
 }
 
 .footer .footer-icons ul li a img {
   width: 50px;
   height: auto;
-  margin: auto;
-  padding: auto;
+  /* margin: auto;
+  padding: auto; */
   transition: transform 0.5s ease;
 }
 .footer .footer-icons ul li:hover img {
@@ -209,8 +216,8 @@ h2 {
 .footer-text {
   display: flex;
   justify-content: space-evenly;
-  padding: auto;
-  margin: auto;
+  /* padding: auto;
+  margin: auto; */
   margin-top: 3vh;
 }
 .footer-details-left ul {
@@ -299,8 +306,8 @@ h2 {
   cursor: pointer;
 }
 .farm-team {
-  margin: auto;
-  padding: auto;
+  /* margin: auto;
+  padding: auto; */
   margin-top: 5vh;
   margin-bottom: 5vh;
 }
@@ -477,7 +484,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: auto;
+    /* padding: auto; */
   }
   .footer .footer-text .footer-copyright-right,
   .footer .footer-text .footer-details-left {
@@ -490,7 +497,7 @@ h2 {
     margin: 0;
     margin-top: 5vh;
     margin-bottom: 5vh;
-    padding: 0;
+    /* padding: 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -503,7 +510,7 @@ h2 {
     width: 80%;
     margin: auto;
     margin-top: 2vh;
-    padding: auto;
+    /* padding: auto; */
     padding-left: 5%;
     padding-right: 5%;
   }

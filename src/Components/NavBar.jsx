@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="rubik-dirt-regular">
       <ul>
         <Link to={"/"}>
           <li>בית</li>

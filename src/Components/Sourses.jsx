@@ -1,32 +1,24 @@
 //Galery
-export const images = [
-  "https://t4.ftcdn.net/jpg/09/35/82/01/360_F_935820146_j4JM76FvHZyaKxMqJBpnFqmOeCMkxMKO.jpg",
-  "https://petapixel.com/assets/uploads/2023/05/McCullough-Peaks-HMA-004-800x534.jpg",
-  "https://ka-hi.com/wp-content/uploads/sites/2/2021/11/pexels-helena-lopes-1996333-scaled.jpg",
-  "https://thumbor.bigedition.com/img/ghODfZUtnTpaz_0cLoFBGGYzZ6s=/0x63:800x483/476x249/filters:quality(80)/granite-web-prod/33/d3/33d3f717ec4c4c9289ed3785db2ed8f2.jpeg",
-  "https://images.photowall.com/products/54866/horses-3.jpg?h=699&q=85",
-  "https://hips.hearstapps.com/countryliving/assets/17/16/1492442048-gettyimages-521282782.jpg",
-  "https://adventures.is/media/226889/icelandic-horse-walking-clouds.jpg?anchor=center&mode=crop&width=970&height=645&rnd=133592106080000000&format=jpg&quality=80",
-  "https://www.bluecross.org.uk/sites/default/files/d8/styles/theme_feature_extra_large/public/assets/images/111432lpr.jpg.webp?itok=p4cGtPP_",
-  "https://i.ibb.co/fCCYCZB/IMG-3030.jpg",
-];
+// export const images = [
+//   "https://t4.ftcdn.net/jpg/09/35/82/01/360_F_935820146_j4JM76FvHZyaKxMqJBpnFqmOeCMkxMKO.jpg",
+//   "https://petapixel.com/assets/uploads/2023/05/McCullough-Peaks-HMA-004-800x534.jpg",
+//   "https://ka-hi.com/wp-content/uploads/sites/2/2021/11/pexels-helena-lopes-1996333-scaled.jpg",
+//   "https://thumbor.bigedition.com/img/ghODfZUtnTpaz_0cLoFBGGYzZ6s=/0x63:800x483/476x249/filters:quality(80)/granite-web-prod/33/d3/33d3f717ec4c4c9289ed3785db2ed8f2.jpeg",
+//   "https://images.photowall.com/products/54866/horses-3.jpg?h=699&q=85",
+//   "https://hips.hearstapps.com/countryliving/assets/17/16/1492442048-gettyimages-521282782.jpg",
+//   "https://adventures.is/media/226889/icelandic-horse-walking-clouds.jpg?anchor=center&mode=crop&width=970&height=645&rnd=133592106080000000&format=jpg&quality=80",
+//   "https://www.bluecross.org.uk/sites/default/files/d8/styles/theme_feature_extra_large/public/assets/images/111432lpr.jpg.webp?itok=p4cGtPP_",
+// ];
 export const farmImages = [
+  "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
   "https://i.ibb.co/CQtWYgt/20241021121534-IMG-2969.jpg",
   "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
   "https://i.ibb.co/FDbFsFP/20241021121611-IMG-2976.jpg",
   "https://i.ibb.co/QfqjjV2/20241021121948-IMG-2993.jpg",
   "https://i.ibb.co/GH8gkYB/20241021121949-IMG-2994.jpg",
   "https://i.ibb.co/Gnm1Pct/20241021122106-IMG-2998.jpg",
-  "https://i.ibb.co/JrmFpXJ/20241021122110-IMG-2999.jpg",
-  "https://i.ibb.co/7SmD5Fn/20241021122154-IMG-3006.jpg",
-  "https://i.ibb.co/85FGFz3/20241021122157-IMG-3008.jpg",
-  "https://i.ibb.co/47ckYkV/20241021122159-IMG-3009.jpg",
   "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
-  "https://i.ibb.co/L6ChCp4/20241021122213-IMG-3011.jpg",
-  "https://i.ibb.co/7NL7J5X/20241021122218-IMG-3012.jpg",
-  "https://i.ibb.co/rGhf8Y5/20241021122224-IMG-3013.jpg",
   "https://i.ibb.co/Mn2FzVG/20241021122340-IMG-3019.jpg",
-  "https://i.ibb.co/Q848TZ7/20241021122359-IMG-3022.jpg",
   "https://i.ibb.co/wL4tzCW/20241021122715-IMG-3029.jpg",
   "https://i.ibb.co/C9DP2fT/20241021122736-IMG-3030.jpg",
   "https://i.ibb.co/v49NqDV/20241021122810-IMG-3033.jpg",
@@ -58,14 +50,17 @@ export const embdedVideos = [
   "https://www.youtube.com/embed/FvCuon94haA",
 ];
 //home
-export const home_images = [
-  "https://www.horizonstructures.com/wp-content/uploads/2022/06/Horse-Barns-1024x575.jpg",
-  "https://wineandcountrylife.com/wp-content/uploads/2021/11/BD-Builders_Custom-Barn_BD_Dryden_143.jpg",
-];
+// export const home_images = [
+//   "https://www.horizonstructures.com/wp-content/uploads/2022/06/Horse-Barns-1024x575.jpg",
+//   "https://wineandcountrylife.com/wp-content/uploads/2021/11/BD-Builders_Custom-Barn_BD_Dryden_143.jpg",
+// ];
 export const home_images2 = [
+  "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
+  "https://i.ibb.co/C9DP2fT/20241021122736-IMG-3030.jpg",
+
   "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
   "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
-  "https://i.ibb.co/vJ9ZXd0/20241021123128-IMG-3046.jpg",
+  "https://i.ibb.co/QjtBqMM/20241021122839-IMG-3035.jpg",
   "https://i.ibb.co/F7XF2FG/20241021123533-IMG-3066.jpg",
 ];
 //Team farm

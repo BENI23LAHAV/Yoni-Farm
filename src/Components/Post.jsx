@@ -17,10 +17,11 @@ const Post = (props) => {
           <p>תאריך: {post.date}</p>
         </div>
       </div>
-      <div className="post-content"></div>
-      {sliceStringToArr(post.content).map((item, index) => (
-        <p key={index}>{item}</p>
-      ))}
+      <div className="post-content">
+        {sliceStringToArr(post.content).map((item, index) => (
+          <p key={index}>{item}</p>
+        ))}
+      </div>
       {/* <p>{post.content}</p> */}
     </div>
   );

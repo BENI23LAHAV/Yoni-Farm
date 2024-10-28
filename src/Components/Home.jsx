@@ -12,7 +12,9 @@ const Home = () => {
   const [information, setInformation] = useState(
     "החווה של חן ממוקמת ביישוב מזכרת בתיה באיזור השפלה.בחווה תוכלו למצוא את מיטב המדריכים המנוסים שלנו. עשרות ילדים אשר חווים את הרכיבה באופן חווייתי מידי שבוע. תוכלו גם למצוא פינת חיי יפייפיה, מאהל בדואי אותנטי, ומרחבים מרחיבי דעת."
   );
-  const [imagesIndex, setImagesIndex] = useState(0);
+  const [imagesIndex, setImagesIndex] = useState(
+    Math.floor(Math.random() * images.length)
+  );
   // setInterval(() => {
   //   handleNext(setImagesIndex);
   // }, 2000);
@@ -36,14 +38,6 @@ const Home = () => {
         ))}
       </div>
       <div className="home-images">
-        {/* {images.map((item, index) => (
-          <img
-            alt={`image ${index}`}
-            src={item}
-            key={index}
-            className="home-image"
-          />
-        ))} */}
         {getCurrentElements(images, imagesIndex, 2).map((item, index) => (
           <img
             alt={`image ${index}`}

@@ -1,5 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { farmTeams } from "../Components/Sourses";
+import {
+  farmTeams,
+  getCurrentElements as getCurrentImage,
+  handleNext,
+  handlePrev,
+} from "../Components/Sourses";
 const rightArrow = require("../Images/right-arrow.png");
 const leftArrow = require("../Images/left-arrow.png");
 
@@ -28,17 +33,19 @@ const TeamFarm = () => {
             onClick={() => handleNext(setIndexTeam)}
           />
         </li>
-        {getCurrentImage(farmTeams, indexTeam, screenWidth > 600 ? 3 : 1).map(
-          (team, index) => (
-            <li>
-              <div className="team-images">
-                <img src={team.image} alt={`${team.name}image`} />
-                <h4>{team.name}</h4>
-                <p>{team.title}</p>
-              </div>
-            </li>
-          )
-        )}
+        {getCurrentImage(
+          farmTeams,
+          indexTeam,
+          screenWidth > 1000 ? 3 : screenWidth > 800 ? 2 : 1
+        ).map((team, index) => (
+          <li>
+            <div className="team-images">
+              <img src={team.image} alt={`${team.name}image`} />
+              <h4>{team.name}</h4>
+              <p>{team.title}</p>
+            </div>
+          </li>
+        ))}
         <li>
           <img
             className="arrow-img"
@@ -55,17 +62,17 @@ const TeamFarm = () => {
 
 export default TeamFarm;
 
-const getCurrentImage = (arr, index, ecceptedLength) => {
-  const result = [];
-  for (let i = 0; i < ecceptedLength; i++) {
-    const currentIndex = (Math.abs(index) + i) % arr.length;
-    result.push(arr[currentIndex]);
-  }
-  return result;
-};
-const handleNext = (setIndex) => {
-  setIndex((prev) => prev + 1);
-};
-const handlePrev = (setIndex) => {
-  setIndex((prev) => prev - 1);
-};
+// const getCurrentImage = (arr, index, ecceptedLength) => {
+//   const result = [];
+//   for (let i = 0; i < ecceptedLength; i++) {
+//     const currentIndex = (Math.abs(index) + i) % arr.length;
+//     result.push(arr[currentIndex]);
+//   }
+//   return result;
+// };
+// const handleNext = (setIndex) => {
+//   setIndex((prev) => prev + 1);
+// };
+// const handlePrev = (setIndex) => {
+//   setIndex((prev) => prev - 1);
+// };

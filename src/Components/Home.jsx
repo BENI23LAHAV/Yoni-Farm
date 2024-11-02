@@ -49,7 +49,7 @@ const Home = () => {
       </div>
       <TeamFarm />
 
-      <h2>שעות פתיחה</h2>
+      <h2>שעות פעילות</h2>
 
       <div className="opening-text">
         <ul>

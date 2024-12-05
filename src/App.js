@@ -8,6 +8,7 @@ import Galery from "./Components/Galery";
 import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import Header from "./Components/Header";
+import NotFound from "./Components/NotFound";
 function App() {
   return (
     <div className="website">
@@ -18,6 +19,7 @@ function App() {
         <Route path="/posts" element={<Posts />} />
         <Route path="/info" element={<Info />} />
         <Route path="/galery" element={<Galery />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </div>

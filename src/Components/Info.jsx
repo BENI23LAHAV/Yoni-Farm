@@ -77,7 +77,7 @@ const Info = () => {
             </li>
 
             <li>
-              <a href="">hachava@gmail.com</a>
+              <a href="mailto:x0527639398@gmail.com">x0527639398@gmail.com</a>
             </li>
           </ul>
         </div>

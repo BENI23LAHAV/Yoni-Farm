@@ -552,6 +552,16 @@ html nagishli#NagishLiTag > #NagishLiBar > #NagishLiBarStrip::before {
     align-items: center;
     justify-content: center;
   }
+  .farm-team ul {
+    margin: 0;
+    padding: 0;
+  }
+  .farm-team ul li {
+    max-width: 30%;
+    min-width: 30%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
   /* ----------------------Footer css---------------**/
   .footer {
     width: 100%;

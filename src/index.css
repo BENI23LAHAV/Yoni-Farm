@@ -485,9 +485,36 @@ h2 {
   background-color: var(--blackColorWithLitlleOpacity);
 }
 #NagishLiBarStrip {
-  z-index: 1500 !important;
+  /* z-index: 1501 !important; */
+  background-color: white !important;
   margin-top: 15vh;
+  object-fit: cover;
 }
+html nagishli#NagishLiTag > #NagishLiBar > #NagishLiBarStrip {
+  background-color: transparent !important;
+  color: #000 !important;
+  font-size: 24px !important;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  cursor: pointer !important;
+}
+
+html nagishli#NagishLiTag > #NagishLiBar > #NagishLiBarStrip::before {
+  content: "\f193"; /* Unicode של Font Awesome לכיסא גלגלים */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #333;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
 @media only screen and (max-width: 600px) {
   nav {
     width: 100%;

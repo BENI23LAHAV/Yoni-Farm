@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.chens-farm.co.il/</loc>
@@ -20,4 +20,36 @@
     <lastmod>2024-12-06</lastmod>
     <priority>0.80</priority>
   </url>
-</urlset>
+</urlset> -->
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Your Website</title>
+  <link href="https://www.chens-farm.co.il" />
+  <updated>2024-12-08T00:00:00Z</updated>
+  
+  <entry>
+    <title>Home</title>
+    <link href="https://www.chens-farm.co.il/" />
+    <updated>2024-12-06T00:00:00Z</updated>
+  </entry>
+
+  <entry>
+    <title>Posts</title>
+    <link href="https://www.chens-farm.co.il/posts" />
+    <updated>2024-12-06T00:00:00Z</updated>
+  </entry>
+
+  <entry>
+    <title>Info</title>
+    <link href="https://www.chens-farm.co.il/info" />
+    <updated>2024-12-06T00:00:00Z</updated>
+  </entry>
+
+  <entry>
+    <title>Gallery</title>
+    <link href="https://www.chens-farm.co.il/galery" />
+    <updated>2024-12-06T00:00:00Z</updated>
+  </entry>
+</feed>

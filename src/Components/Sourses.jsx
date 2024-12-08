@@ -16,8 +16,6 @@ export const farmImages = [
   "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
   "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
   "https://i.ibb.co/FDbFsFP/20241021121611-IMG-2976.jpg",
-  "https://i.ibb.co/QfqjjV2/20241021121948-IMG-2993.jpg",
-  "https://i.ibb.co/GH8gkYB/20241021121949-IMG-2994.jpg",
   "https://i.ibb.co/Gnm1Pct/20241021122106-IMG-2998.jpg",
   "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
   "https://i.ibb.co/Mn2FzVG/20241021122340-IMG-3019.jpg",
@@ -39,6 +37,8 @@ export const farmImages = [
   "https://i.ibb.co/L06qWDH/20241021123900-IMG-3085.jpg",
   "https://i.ibb.co/0YvGP6g/20241021123929-IMG-3091.jpg",
   "https://i.ibb.co/SvfFkrT/20241021123943-IMG-3093.jpg",
+  "https://i.ibb.co/ys19mzc/20241021121949-IMG-2994-copy.jpg",
+  "https://i.ibb.co/X49frP2/20241021121948-IMG-2993-copy.jpg",
 ];
 
 //Info

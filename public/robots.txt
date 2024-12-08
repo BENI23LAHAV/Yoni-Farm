@@ -1,3 +1,2 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Sitemap: https://www.chens-farm.co.il/sitemap.xml

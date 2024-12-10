@@ -11,7 +11,11 @@ import {
 const Home = () => {
   const [visible, setVisible] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
-
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+  function handleResize() {
+    setScreenWidth(window.innerWidth);
+  }
+  window.addEventListener("resize", handleResize);
   const handleImageClick = (image) => {
     console.log("currentImage", currentImage);
     console.log(visible);
@@ -100,24 +104,8 @@ const Home = () => {
               boxShadow: "0 4px 10px rgba(0, 0, 0, 0.25)",
               zIndex: 1000,
             }}>
-            <div
-              className="modal-content"
-              style={{
-                padding: "20px",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}>
-              <span
-                className="close"
-                onClick={handleClose}
-                style={{
-                  position: "absolute",
-                  top: "10px",
-                  right: "10px",
-                  fontSize: "1.5rem",
-                  cursor: "pointer",
-                }}>
+            <div className="modal-content">
+              <span className="close" onClick={handleClose}>
                 &times;
               </span>
               <img
@@ -127,6 +115,10 @@ const Home = () => {
                   maxWidth: "100%",
                   maxHeight: "80vh",
                   objectFit: "contain",
+                  minWidth:
+                    window.innerWidth < 600
+                      ? `${window.innerWidth}px`
+                      : "580px",
                 }}
               />
             </div>

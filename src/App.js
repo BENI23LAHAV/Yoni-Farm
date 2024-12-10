@@ -9,6 +9,7 @@ import Footer from "./Components/Footer";
 import NavBar from "./Components/NavBar";
 import Header from "./Components/Header";
 import NotFound from "./Components/NotFound";
+import Accessibility_statement from "./Components/Accessibility_statement";
 function App() {
   return (
     <div className="website">
@@ -19,6 +20,10 @@ function App() {
         <Route path="/posts" element={<Posts />} />
         <Route path="/info" element={<Info />} />
         <Route path="/galery" element={<Galery />} />
+        <Route
+          path="/accessibility-statement"
+          element={<Accessibility_statement />}
+        />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />

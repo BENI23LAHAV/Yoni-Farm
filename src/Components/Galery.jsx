@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { farmImages as images } from "../Components/Sourses";
 
 const Galery = () => {
@@ -30,8 +30,8 @@ const Galery = () => {
           //       }
           //     : {}),
           // }}
-          src={image}
-          alt={`image ${i}`}
+          src={image.url}
+          alt={image.alt}
           key={i}
           onClick={() => {
             handleImageClick(image);
@@ -43,9 +43,10 @@ const Galery = () => {
       {visible && (
         <div className="overlay " onClick={handleClose}>
           <img
-            src={currentImage}
-            alt="full screen"
+            src={currentImage.url}
+            alt={currentImage.alt}
             className="full-screen-image"
+            style={{}}
           />
         </div>
       )}

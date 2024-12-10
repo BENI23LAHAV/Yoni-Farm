@@ -164,7 +164,7 @@ export default Info;
 
 function sliceStringToArr(string) {
   const arr = string.split(/(?<=[.])/);
-  console.log(arr);
+  // console.log(arr);
 
   return arr;
 }

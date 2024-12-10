@@ -32,7 +32,7 @@ export default Post;
 function sliceStringToArr(string) {
   // const arr = string.split(/[.,]/);
   const arr = string.split(/(?<=[.,])/);
-  console.log(arr);
+  // console.log(arr);
 
   return arr;
 }

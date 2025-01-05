@@ -26,7 +26,7 @@ const Post = (props) => {
     </div>
   );
 };
-
+//some commit
 export default Post;
 
 function sliceStringToArr(string) {

@@ -30,6 +30,7 @@ const Galery = () => {
           //       }
           //     : {}),
           // }}
+          loading="lazy"
           src={image.url}
           alt={image.alt}
           key={i}

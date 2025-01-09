@@ -16,7 +16,7 @@ const NavBar = () => {
           <li>מי אנחנו</li>
         </Link>
 
-        <Link to={"/galery"}>
+        <Link to={"/gallery"}>
           <li>גלרייה</li>
         </Link>
       </ul>

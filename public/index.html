@@ -74,19 +74,8 @@
   </head>
   <body>
     <div id="bthn" lang="he"></div>
-    <!-- <script>
-      // פונקציה לבדוק אם המשתמש הוא רובוט
-      function isBot() {
-        var userAgent = navigator.userAgent.toLowerCase();
-        // רשימה של רובוטים פופולריים (אפשר להוסיף עוד רובוטים לפי הצורך)
-        var bots = ["googlebot", "bingbot", "slurp", "baidu", "yandex"];
-        return bots.some(function (bot) {
-          return userAgent.indexOf(bot) !== -1;
-        });
-      }
-
-      // אם מדובר במשתמש אנושי, נטען את הסקריפט
-      if (!isBot()) {
+    <script>
+      (function () {
         var script = document.createElement("script");
         script.type = "text/javascript";
         script.src = "https://bringthemhomenow.net/1.1.0/hostages-ticker.js";
@@ -96,8 +85,8 @@
         );
         script.setAttribute("crossorigin", "anonymous");
         document.getElementsByTagName("head")[0].appendChild(script);
-      }
-    </script> -->
+      })();
+    </script>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

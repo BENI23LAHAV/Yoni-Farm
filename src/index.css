@@ -615,6 +615,11 @@ html nagishli#NagishLiTag > #NagishLiBar > #NagishLiBarStrip::before {
     justify-content: center;
     /* padding: auto; */
   }
+
+  .footer .footer-icons ul li a img {
+    width: 45px;
+  }
+
   .footer .footer-text .footer-copyright-right,
   .footer .footer-text .footer-details-left {
     width: 100%;

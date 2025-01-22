@@ -31,14 +31,14 @@ const Footer = () => {
               <img src={phoneImage} alt="phone Image" />
             </a>
           </li>
-          {/* <li>
+          <li>
             <a
-              href="https://wa.me/+97254123456"
+              href="https://wa.me/+972544476898"
               target="_blank"
               rel="noreferrer">
               <img src={whatsappImage} alt="whatsapp Image" />
             </a>
-          </li> */}
+          </li>
           <li>
             <a
               href="https://www.facebook.com/people/%D7%94%D7%97%D7%95%D7%95%D7%94-%D7%A9%D7%9C-%D7%97%D7%9F/61568537592902/"

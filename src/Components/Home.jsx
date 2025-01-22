@@ -17,8 +17,8 @@ const Home = () => {
   }
   window.addEventListener("resize", handleResize);
   const handleImageClick = (image) => {
-    console.log("currentImage", currentImage);
-    console.log(visible);
+    // console.log("currentImage", currentImage);
+    // console.log(visible);
 
     setCurrentImage(image);
     setVisible(true);

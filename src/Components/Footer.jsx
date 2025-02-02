@@ -27,13 +27,13 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="tel:+97254123456" target="_blank" rel="noreferrer">
+            <a href="tel:+972545459614" target="_blank" rel="noreferrer">
               <img src={phoneImage} alt="phone Image" />
             </a>
           </li>
           <li>
             <a
-              href="https://wa.me/+972544476898"
+              href="https://wa.me/+972545459614"
               target="_blank"
               rel="noreferrer">
               <img src={whatsappImage} alt="whatsapp Image" />
@@ -62,7 +62,7 @@ const Footer = () => {
         <div className="footer-details-left">
           <ul>
             <li>כתובתינו: כביש 411 סמוך ליילו מזכרת בתיה,ישראל </li>
-            <li>פלאפון: 0527639398</li>
+            <li>פלאפון: 0545459614</li>
             <li>נשמח לראותכם בשעות הפעילות</li>
           </ul>
         </div>

@@ -65,7 +65,7 @@ const Info = () => {
         <div className="contact-info">
           <ul>
             <li>
-              <a href="tel:+97254123456">פלאפון: 0527639398</a>
+              <a href="tel:+972545459614">פלאפון: 0545459614</a>
             </li>
             <li>
               <a

@@ -29,6 +29,7 @@ const TeamFarm = () => {
             className="arrow-img"
             src={rightArrow}
             alt="right arrow"
+            title="right arrow Logo icon by Icons8"
             style={{ cursor: "pointer" }}
             onClick={() => handleNext(setIndexTeam)}
           />
@@ -51,6 +52,7 @@ const TeamFarm = () => {
             className="arrow-img"
             src={leftArrow}
             alt="left arrow"
+            title="left arrow Logo icon by Icons8"
             style={{ cursor: "pointer" }}
             onClick={() => handlePrev(setIndexTeam)}
           />

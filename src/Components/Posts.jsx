@@ -1,6 +1,6 @@
 import React from "react";
 import Post from "./Post";
-// מערך הפוסטים עם תוכן של 500+ מילים
+
 import { postsData } from "../Components/Sourses";
 
 const Posts = () => {

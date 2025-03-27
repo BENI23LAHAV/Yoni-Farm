@@ -12,9 +12,11 @@ const Post = (props) => {
           className="circle-image"
         />
         <div className="author-details">
-          <p>מאת: {post.authorName || "אורח"}</p>
-          <p>{post.farmTitle || ""}</p>
-          <p>תאריך: {post.date}</p>
+          <span>מאת: {post.authorName || "אורח"}</span>
+          <br />
+          <span>{post.farmTitle || ""}</span>
+          <br />
+          <span>תאריך: {post.date}</span>
         </div>
       </div>
       <div className="post-content">

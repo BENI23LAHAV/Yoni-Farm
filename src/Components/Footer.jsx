@@ -35,7 +35,7 @@ const Footer = () => {
               />
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="tel:+972545459614" target="_blank" rel="noreferrer">
               <img
                 src={phoneImage}
@@ -43,7 +43,7 @@ const Footer = () => {
                 title="Phone Logo icon by Icons8"
               />
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               href="https://wa.me/+972545459614"
@@ -87,39 +87,49 @@ const Footer = () => {
       <div className="footer-text">
         <div className="footer-details-left">
           <ul>
-            <li>כתובתינו: כביש 411 סמוך ליילו מזכרת בתיה,ישראל </li>
             <li>
-              פלאפון:
-              <a
-                href="tel:+972545459614"
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: "white", textDecoration: "none" }}>
-                {" "}
-                0545459614
-              </a>
+              <p>כתובתינו: כביש 411 סמוך ליילו מזכרת בתיה,ישראל</p>
             </li>
             <li>
-              מייל:
-              <a
-                href="mailto:x0527639398@gmail.com"
-                style={{ color: "white", textDecoration: "none" }}>
+              <p>
                 {" "}
-                x0527639398@gmail.com
-              </a>
+                <a
+                  href="tel:+972545459614"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{ color: "white", textDecoration: "none" }}>
+                  פלאפון: 0545459614
+                </a>
+              </p>
             </li>
-            <li>נשמח לראותכם בשעות הפעילות</li>
+            <li>
+              <p>
+                {" "}
+                <a
+                  href="mailto:x0527639398@gmail.com"
+                  style={{ color: "white", textDecoration: "none" }}>
+                  דוא"ל: x0527639398@gmail.com
+                </a>
+              </p>
+            </li>
+            <p>
+              {" "}
+              <li>נשמח לראותכם בשעות הפעילות</li>
+            </p>
           </ul>
         </div>
         <div className="footer-copyright-right">
           <p>© 2024. כל הזכויות שמורות.</p>
           <p>Created & Desigend by: Beni Lahav</p>
-          <a
-            href="mailto:beni0548472300@gmail.com"
-            target="_blank"
-            rel="noreferrer">
-            beni0548472300@gmail.com
-          </a>
+          <p>
+            {" "}
+            <a
+              href="mailto:beni0548472300@gmail.com"
+              target="_blank"
+              rel="noreferrer">
+              beni0548472300@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </div>

@@ -12,6 +12,9 @@
   --aquaColor: aqua;
   --azureColor: azure;
   --brownColor: brown;
+  --oliveGreev: #7d8f69;
+  --mentaGreev: #9bbf88;
+  --forestGreen: #4a6741;
   --gradientDark: linear-gradient(
     135deg,
     rgba(0, 0, 0, 0.9),
@@ -413,20 +416,30 @@ h2 {
 }
 
 /* ----------------------Galery css-------------------**/
+/* Galery.css */
+
 .galery {
-  margin: auto;
-  margin-bottom: 100px;
-  margin-top: 5vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 5vh auto 100px;
+  width: 90%;
 }
 
 .galery img {
-  width: 30vh;
   height: 200px;
-  margin: 10px;
-  border-radius: 10px;
   object-fit: cover;
-  object-position: center;
+  border-radius: 10px;
   cursor: pointer;
+  border: var(--gradientDark) 5px solid;
+  margin: 5px;
+}
+
+.galery img:hover {
+  transform: scale(1.05);
+  cursor: zoom-in;
+  transition: transform 0.5s ease;
 }
 
 .galery .overlay {
@@ -435,7 +448,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--blackColorWithOpacity);
+  background-color: var(--blackColorWithOpacity, rgba(0, 0, 0, 0.8));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -444,13 +457,15 @@ h2 {
 
 .galery .overlay img {
   width: 90vh;
-  height: auto;
+  height: 80%;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   border-radius: 10px;
-  z-index: 1001;
+  cursor: zoom-out;
+  border: none;
 }
+
 /*-----------------------Posts css----------------**/
 .posts {
   margin: auto;

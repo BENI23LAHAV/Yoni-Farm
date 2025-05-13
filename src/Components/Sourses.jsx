@@ -1,18 +1,5 @@
 //Galery
-// export const images = [
-//   "https://t4.ftcdn.net/jpg/09/35/82/01/360_F_935820146_j4JM76FvHZyaKxMqJBpnFqmOeCMkxMKO.jpg",
-//   "https://petapixel.com/assets/uploads/2023/05/McCullough-Peaks-HMA-004-800x534.jpg",
-//   "https://ka-hi.com/wp-content/uploads/sites/2/2021/11/pexels-helena-lopes-1996333-scaled.jpg",
-//   "https://thumbor.bigedition.com/img/ghODfZUtnTpaz_0cLoFBGGYzZ6s=/0x63:800x483/476x249/filters:quality(80)/granite-web-prod/33/d3/33d3f717ec4c4c9289ed3785db2ed8f2.jpeg",
-//   "https://images.photowall.com/products/54866/horses-3.jpg?h=699&q=85",
-//   "https://hips.hearstapps.com/countryliving/assets/17/16/1492442048-gettyimages-521282782.jpg",
-//   "https://adventures.is/media/226889/icelandic-horse-walking-clouds.jpg?anchor=center&mode=crop&width=970&height=645&rnd=133592106080000000&format=jpg&quality=80",
-//   "https://www.bluecross.org.uk/sites/default/files/d8/styles/theme_feature_extra_large/public/assets/images/111432lpr.jpg.webp?itok=p4cGtPP_",
 
-import { url } from "css-tree";
-import { name } from "xml-name-validator";
-
-// ];
 export const farmImagesAlt = [
   "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
   "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
@@ -43,108 +30,110 @@ export const farmImagesAlt = [
 ];
 export const farmImages = [
   {
-    url: "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
-    alt: "horse 1",
-  },
-  {
-    url: "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
-    alt: "horse 2",
-  },
-  {
-    url: "https://i.ibb.co/FDbFsFP/20241021121611-IMG-2976.jpg",
-    alt: "Ducks",
-  },
-  {
-    url: "https://i.ibb.co/Gnm1Pct/20241021122106-IMG-2998.jpg",
-    alt: " Horse 3",
-  },
-  {
-    url: "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
-    alt: "Horse 4",
-  },
-  {
-    url: "https://i.ibb.co/Mn2FzVG/20241021122340-IMG-3019.jpg",
-    alt: "Horse 5",
-  },
-  {
-    url: "https://i.ibb.co/wL4tzCW/20241021122715-IMG-3029.jpg",
-    alt: "Roosters 1",
-  },
-  {
-    url: "https://i.ibb.co/C9DP2fT/20241021122736-IMG-3030.jpg",
-    alt: "Roosters 2",
-  },
-  {
-    url: "https://i.ibb.co/v49NqDV/20241021122810-IMG-3033.jpg",
-    alt: "Roosters 3",
-  },
-  {
-    url: "https://i.ibb.co/QjtBqMM/20241021122839-IMG-3035.jpg",
-    alt: "rabbit 1",
-  },
-  {
-    url: "https://i.ibb.co/fr7VKPr/20241021122908-IMG-3037.jpg",
-    alt: "rabbit 2",
-  },
-  {
-    url: "https://i.ibb.co/FwgLmxT/20241021122956-IMG-3039.jpg",
-    alt: "parrot",
-  },
-  {
-    url: "https://i.ibb.co/vJ9ZXd0/20241021123128-IMG-3046.jpg",
-    alt: "Horse 6",
-  },
-  {
     url: "https://i.ibb.co/mSVSVrg/20241021123142-IMG-3047.jpg",
     alt: "Horse 7",
-  },
-  {
-    url: "https://i.ibb.co/dPWP89Q/20241021123238-IMG-3050.jpg",
-    alt: "the farm enterance",
-  },
-  {
-    url: "https://i.ibb.co/Ny4dqkt/20241021123504-IMG-3064.jpg",
-    alt: "A woman riding a horse 1",
-  },
-  {
-    url: "https://i.ibb.co/F7XF2FG/20241021123533-IMG-3066.jpg",
-    alt: "A woman riding a horse 2",
-  },
-  {
-    url: "https://i.ibb.co/gw6XQ5S/20241021123548-IMG-3068.jpg",
-    alt: "farm view",
-  },
-  {
-    url: "https://i.ibb.co/yyz5MM3/20241021123610-IMG-3071.jpg",
-    alt: "Horses trip",
-  },
-  {
-    url: "https://i.ibb.co/V9g5ftq/20241021123823-IMG-3080.jpg",
-    alt: "Camel 1",
   },
   {
     url: "https://i.ibb.co/sVPNkTk/20241021123837-IMG-3083.jpg",
     alt: "Camel 2",
   },
   {
+    url: "https://i.ibb.co/Gnm1Pct/20241021122106-IMG-2998.jpg",
+    alt: " Horse 3",
+  },
+  {
+    url: "https://i.ibb.co/Mn2FzVG/20241021122340-IMG-3019.jpg",
+    alt: "Horse 5",
+  },
+  {
+    url: "https://i.ibb.co/FDbFsFP/20241021121611-IMG-2976.jpg",
+    alt: "Ducks",
+  },
+  {
+    url: "https://i.ibb.co/QjtBqMM/20241021122839-IMG-3035.jpg",
+    alt: "rabbit 1",
+  },
+  {
+    url: "https://i.ibb.co/gw6XQ5S/20241021123548-IMG-3068.jpg",
+    alt: "farm view",
+  },
+  {
+    url: "https://i.ibb.co/v49NqDV/20241021122810-IMG-3033.jpg",
+    alt: "Roosters 3",
+  },
+  {
+    url: "https://i.ibb.co/X49frP2/20241021121948-IMG-2993-copy.jpg",
+    alt: "Ducks 1",
+  },
+  {
+    url: "https://i.ibb.co/C9DP2fT/20241021122736-IMG-3030.jpg",
+    alt: "Roosters 2",
+  },
+  {
+    url: "https://i.ibb.co/wL4tzCW/20241021122715-IMG-3029.jpg",
+    alt: "Roosters 1",
+  },
+  {
     url: "https://i.ibb.co/L06qWDH/20241021123900-IMG-3085.jpg",
     alt: "Donkey 2",
   },
   {
-    url: "https://i.ibb.co/0YvGP6g/20241021123929-IMG-3091.jpg",
-    alt: "Donkey 1",
+    url: "https://i.ibb.co/yyz5MM3/20241021123610-IMG-3071.jpg",
+    alt: "Horses trip",
+  },
+
+  {
+    url: "https://i.ibb.co/fr7VKPr/20241021122908-IMG-3037.jpg",
+    alt: "rabbit 2",
   },
   {
-    url: "https://i.ibb.co/SvfFkrT/20241021123943-IMG-3093.jpg",
-    alt: "Camels 3",
+    url: "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
+    alt: "horse 1",
+  },
+  {
+    url: "https://i.ibb.co/vJ9ZXd0/20241021123128-IMG-3046.jpg",
+    alt: "Horse 6",
   },
   {
     url: "https://i.ibb.co/ys19mzc/20241021121949-IMG-2994-copy.jpg",
     alt: "Ducks 2",
   },
   {
-    url: "https://i.ibb.co/X49frP2/20241021121948-IMG-2993-copy.jpg",
-    alt: "Ducks 1",
+    url: "https://i.ibb.co/Ny4dqkt/20241021123504-IMG-3064.jpg",
+    alt: "A woman riding a horse 1",
+  },
+
+  {
+    url: "https://i.ibb.co/F7XF2FG/20241021123533-IMG-3066.jpg",
+    alt: "A woman riding a horse 2",
+  },
+  {
+    url: "https://i.ibb.co/MkzC3xt/20241021122209-IMG-3010.jpg",
+    alt: "Horse 4",
+  },
+  {
+    url: "https://i.ibb.co/dPWP89Q/20241021123238-IMG-3050.jpg",
+    alt: "the farm enterance",
+  },
+  {
+    url: "https://i.ibb.co/PGy4xhH/20241021121539-IMG-2973.jpg",
+    alt: "horse 2",
+  },
+  {
+    url: "https://i.ibb.co/FwgLmxT/20241021122956-IMG-3039.jpg",
+    alt: "parrot",
+  },
+  {
+    url: "https://i.ibb.co/V9g5ftq/20241021123823-IMG-3080.jpg",
+    alt: "Camel 1",
+  },
+  {
+    url: "https://i.ibb.co/SvfFkrT/20241021123943-IMG-3093.jpg",
+    alt: "Camels 3",
+  },
+  {
+    url: "https://i.ibb.co/0YvGP6g/20241021123929-IMG-3091.jpg",
+    alt: "Donkey 1",
   },
 ];
 
@@ -158,10 +147,7 @@ export const embdedVideos = [
   "https://www.youtube.com/embed/FvCuon94haA",
 ];
 //home
-// export const home_images = [
-//   "https://www.horizonstructures.com/wp-content/uploads/2022/06/Horse-Barns-1024x575.jpg",
-//   "https://wineandcountrylife.com/wp-content/uploads/2021/11/BD-Builders_Custom-Barn_BD_Dryden_143.jpg",
-// ];
+
 export const home_images2 = [
   "https://i.ibb.co/547yycL/20241021121523-IMG-2964.jpg",
   "https://i.ibb.co/C9DP2fT/20241021122736-IMG-3030.jpg",

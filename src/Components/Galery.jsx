@@ -1,9 +1,13 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { farmImages as images } from "../Components/Sourses";
+
+const BATCH_SIZE = 10;
+const DELAY_MS = 2000;
 
 const Galery = () => {
   const [visible, setVisible] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
+  const [batchIndex, setBatchIndex] = useState(1);
 
   const handleImageClick = (image) => {
     setCurrentImage(image);
@@ -29,9 +33,17 @@ const Galery = () => {
     };
   }, [visible]);
 
+  useEffect(() => {
+    if (batchIndex * BATCH_SIZE >= images.length) return;
+    const timer = setTimeout(() => {
+      setBatchIndex((prev) => prev + 1);
+    }, DELAY_MS);
+    return () => clearTimeout(timer);
+  }, [batchIndex, images.length]);
+
   return (
     <div className="galery">
-      {images.map((image, i) => (
+      {images.slice(0, batchIndex * BATCH_SIZE).map((image, i) => (
         <img
           loading="lazy"
           src={image.url}

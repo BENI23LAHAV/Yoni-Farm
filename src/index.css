@@ -125,7 +125,7 @@ nav ul a li {
   color: var(--azureColor);
 }
 body {
-  background-image: url("./Images/background-trees.jpeg");
+  background-image: url("../public/background.jpeg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -507,6 +507,13 @@ h2 {
 }
 .post-content p {
   text-align: right;
+}
+
+.read-more {
+  cursor: pointer;
+}
+.read-more :hover {
+  cursor: pointer;
 }
 /*----------------------Modal-content css----------------**/
 .modal-content {

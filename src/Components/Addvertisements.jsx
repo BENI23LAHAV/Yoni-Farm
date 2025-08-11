@@ -103,7 +103,7 @@ const Addvertisements = () => {
           alt={currentAd.alt}
           style={
             window.innerWidth <= 600
-              ? { height: "50vh", zIndex: 2000 }
+              ? { height: "70vh", zIndex: 2000 }
               : {
                   maxWidth: "90vw",
                   maxHeight: "80vh",

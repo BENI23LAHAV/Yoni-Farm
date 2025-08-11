@@ -229,6 +229,21 @@ export const postsData = [
   },
 ];
 
+export const addvertisementImages = [
+  {
+    url: "https://i.ibb.co/k2tr7cr9/image.jpg",
+    alt: "addvertisment1",
+    fromDate: "2025-08-10",
+    toDate: "2025-09-01",
+  },
+  {
+    url: "https://i.ibb.co/3q856YV/image.jpg",
+    alt: "addvertisment2",
+    fromDate: "2025-08-10",
+    toDate: "2025-08-22",
+  },
+];
+
 //functions
 //functions that received an array, index and ecceptedLength and returns a new array
 export const getCurrentElements = (arr, index, ecceptedLength) => {

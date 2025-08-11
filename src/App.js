@@ -10,9 +10,11 @@ import NavBar from "./Components/NavBar";
 import Header from "./Components/Header";
 import NotFound from "./Components/NotFound";
 import Accessibility_statement from "./Components/Accessibility_statement";
+import Addvertisements from "./Components/Addvertisements";
 function App() {
   return (
     <div className="website">
+      <Addvertisements />
       <NavBar />
       <Header />
       <Routes>
